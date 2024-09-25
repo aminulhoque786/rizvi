@@ -1,0 +1,125 @@
+.navbar {
+  position: fixed; /* Fixes the navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with 80% opacity */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+  
+  .navbar-scrolled {
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%); 
+    opacity:80%;/* New background when scrolled */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for effect */
+  }
+  
+  .max-w-container {
+    max-width: 1200px; /* Adjust width if needed */
+    margin: 0 auto;
+  }
+  .buton {
+  
+    position: relative;
+    cursor: pointer;
+}
+li{
+  list-style: none;
+}
+
+.buton a {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 700;
+  height: 49px;
+  line-height: 40px;
+  width: 217px;
+  transform-style: preserve-3d;
+  position: relative;
+  transition: .3s;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}.buton a {
+  color: #4CAF50;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 700;
+  height: 39px;
+  line-height: 40px;
+  width: 147px;
+  transform-style: preserve-3d;
+  position: relative;
+  transition: .3s;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.buton a:before {
+  content: "\f232";
+  font-family: "Font Awesome 5 Free";
+    /* Ensure Font Awesome is loaded */
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    color: #10e264;
+    background-color: #fff;
+    border: 1px solid #0be06e;
+    line-height: 38px;
+    transition: .3s;
+    transform-origin: bottom;
+    transform: translateY(-100%) rotateX(90deg);
+}
+.btn_btn{
+  text-align: center;
+  padding: 10px;
+}
+.buton a:after {
+    content: attr(front);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #1fd207;
+    color: #fff;
+    transition: .3s;
+    transform-origin: top;
+    transform: translateY(0) rotateX(0deg);
+}
+
+.buton a:hover:before {
+    transform: translateY(0) rotateX(0deg);
+}
+
+.buton a:hover:after {
+    transform: translateY(100%) rotateX(90deg);
+}
+
+.buton-bord a:before {
+    background: #0cd16e;
+    color: #fff;
+}
+
+.buton-bord a:after {
+    background: transparent;
+    color: #13cf58;
+    border: 1px solid #1ce990;
+}
+  

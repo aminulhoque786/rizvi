@@ -1,0 +1,18 @@
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink {
+    from { border-right: 2px solid transparent; }
+    to { border-right: 2px solid #fff; }
+  }
+  
+  .typing-effect {
+    overflow: hidden; /* Ensures the text is hidden until fully typed */
+    white-space: nowrap; /* Prevents text from wrapping */
+    border-right: 2px solid #fff; /* The cursor effect */
+    animation: typing 6s steps(30, end) infinite, blink 0.75s step-end infinite;
+    font-family: inherit; /* Use the same font family as its parent */
+  }
+  
